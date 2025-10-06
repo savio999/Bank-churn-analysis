@@ -2,7 +2,7 @@
 
 Dataset is taken from https://www.kaggle.com/datasets/radheshyamkollipara/bank-customer-churn
 
-##About Dataset
+## About Dataset
 RowNumber—corresponds to the record (row) number and has no effect on the output.
 CustomerId—contains random values and has no effect on customer leaving the bank.
 Surname—the surname of a customer has no impact on their decision to leave the bank.
@@ -22,7 +22,7 @@ Satisfaction Score—Score provided by the customer for their complaint resoluti
 Card Type—type of card hold by the customer.
 Points Earned—the points earned by the customer for using credit card.
 
-##Objective
+## Objective
 As we know, it is much more expensive to sign in a new client than keeping an existing one. It is advantageous for banks to know what leads a client towards the decision to leave the company. Churn prevention allows companies to develop loyalty programs and retention campaigns to keep as many customers as possible.
  
 ##Data cleaning and modelling
@@ -33,7 +33,7 @@ As we know, it is much more expensive to sign in a new client than keeping an ex
 •	The “RowNumber” column was removed as it was not relevant for analysis.
 •	No duplicate records were detected in the dataset.
 
-##Relation View
+## Relation View
  
 
 From the main fact table “Customer-Churn-Records”, the following dimension tables were created to enhance reporting and analysis:
@@ -46,11 +46,11 @@ All the above tables maintain a one-to-many relationship with the fact table (Cu
 
 
 
-##Reports
+## Reports
 
 I have created reports in 3 pages:
 
-###1. Overview:
+### 1. Overview:
 
  
 
@@ -67,7 +67,7 @@ Financial Insights:
 •	Customers are categorized by bank balance into <50K, 50K–100K, 100K–200K, and 200K+ groups.
 •	The churn rate increases progressively with higher balances — 25.02% for 100K–200K and 55.08% for 200K+ customers, indicating that high-balance customers are more likely to churn.
 
-###2. Churn Breakdown:
+### 2. Churn Breakdown:
 
  
 
@@ -78,11 +78,11 @@ d. Customers with higher credit scores and a greater number of products tend to 
 e.  A total of 685 customers with credit scores between 580–669 churned, making this range the most affected segment.
 f. Interestingly, customers with an estimated salary between 100K–200K show the highest churn, with 1,045 customers leaving.
 
-###3. Credit Card Churn:  
+### 3. Credit Card Churn:  
 
 Customers without credit cards show a slightly higher churn rate compared to those who have credit cards. However, there is not much variation in churn among different credit card holders — the difference is around 20% or less.
 
-###Conclusion
+### Conclusion
 The analysis of the Customer Churn dataset (10,000 records) provides valuable insights into customer behavior and the key factors influencing churn.
 The overall churn rate is 20.4%, with higher churn observed among females, inactive members, and customers with higher account balances. France records the highest churn, while Spain performs the best in customer retention.
 Tenure analysis reveals that customers with shorter relationships (3–6 years) are more likely to churn, whereas those with 10+ years of association show the highest loyalty. Similarly, customers with higher credit scores and multiple products demonstrate lower churn tendencies.
