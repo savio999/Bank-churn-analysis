@@ -33,7 +33,7 @@ As we know, it is much more expensive to sign in a new client than keeping an ex
 •	No duplicate records were detected in the dataset.
 
 ## Relation View
-!(https://github.com/savio999/Bank-churn-analysis/blob/main/relation%20View.png)
+!Reltion View(https://github.com/savio999/Bank-churn-analysis/blob/main/relation%20View.png)
 From the main fact table “Customer-Churn-Records”, the following dimension tables were created to enhance reporting and analysis:
 1.	Credit Card Holders<br>
 2.	Geography<br>
