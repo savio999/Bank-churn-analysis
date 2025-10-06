@@ -26,21 +26,20 @@ Points Earned—the points earned by the customer for using credit card.<br>
 As we know, it is much more expensive to sign in a new client than keeping an existing one. It is advantageous for banks to know what leads a client towards the decision to leave the company. Churn prevention allows companies to develop loyalty programs and retention campaigns to keep as many customers as possible.
  
 ## Data cleaning and modelling
-
-•	The dataset contains 10,000 rows.
-•	Upon inspection, no data errors or inconsistencies were found.
-•	Data types for all columns were verified and found to be appropriate.
-•	The “RowNumber” column was removed as it was not relevant for analysis.
+•	The dataset contains 10,000 rows.<br>
+•	Upon inspection, no data errors or inconsistencies were found.<br>
+•	Data types for all columns were verified and found to be appropriate.<br>
+•	The “RowNumber” column was removed as it was not relevant for analysis.<br>
 •	No duplicate records were detected in the dataset.
 
 ## Relation View
-
+!(https://github.com/savio999/Bank-churn-analysis/blob/main/relation%20View.png)
 From the main fact table “Customer-Churn-Records”, the following dimension tables were created to enhance reporting and analysis:
-1.	Credit Card Holders
-2.	Geography
-3.	Gender
-4.	Active Members
-5.	Exited
+1.	Credit Card Holders<br>
+2.	Geography<br>
+3.	Gender<br>
+4.	Active Members<br>
+5.	Exited<br>
 All the above tables maintain a one-to-many relationship with the fact table (Customer-Churn-Records), enabling efficient data modeling and improved report performance.
 
 ## Reports
@@ -48,30 +47,32 @@ All the above tables maintain a one-to-many relationship with the fact table (Cu
 I have created reports in 3 pages:
 
 ### 1. Overview:
+!(https://github.com/savio999/Bank-churn-analysis/blob/main/Overview.png)
+Dataset Overview and Key Insights:<br>
+•	The dataset contains 10,000 customer records, with an overall churn rate of 20.4%.<br>
+•	A total of 2,044 complaints were received, and the average customer satisfaction score is 3.01 out of 5.<br>
+•	7,055 customers hold credit cards.<br>
+•	The bank has 5,151 active and 4,849 inactive members. Inactive customers show a higher churn rate (25.87%) compared to active members (14.27%).<br><br>
 
-Dataset Overview and Key Insights:
-•	The dataset contains 10,000 customer records, with an overall churn rate of 20.4%.
-•	A total of 2,044 complaints were received, and the average customer satisfaction score is 3.01 out of 5.
-•	7,055 customers hold credit cards.
-•	The bank has 5,151 active and 4,849 inactive members. Inactive customers show a higher churn rate (25.87%) compared to active members (14.27%).
-
-Demographic Insights:
-•	Customers are grouped by age as 1–18, 19–25, 26–35, 36–59, and 60+ years.
-•	Minor accounts (1–18 years) have the churn rate of (9.09%).
-•	Churn increases with age, peaking at 29.02% in the 36–59 age group, while senior citizens (60+) have the second-highest churn rate (27.95%).
-Financial Insights:
-•	Customers are categorized by bank balance into <50K, 50K–100K, 100K–200K, and 200K+ groups.
+Demographic Insights:<br>
+•	Customers are grouped by age as 1–18, 19–25, 26–35, 36–59, and 60+ years.<br>
+•	Minor accounts (1–18 years) have the churn rate of (9.09%).<br>
+•	Churn increases with age, peaking at 29.02% in the 36–59 age group, while senior citizens (60+) have the second-highest churn rate (27.95%).<br><br>
+Financial Insights:<br>
+•	Customers are categorized by bank balance into <50K, 50K–100K, 100K–200K, and 200K+ groups.<br>
 •	The churn rate increases progressively with higher balances — 25.02% for 100K–200K and 55.08% for 200K+ customers, indicating that high-balance customers are more likely to churn.
 
 ### 2. Churn Breakdown:
-a. Based on the Tenure chart (grouped into 0–2, 3–6, 7–9, and 10+ years), the churn rate increases from the 0–2 group to the 3–6 group, and then gradually decreases thereafter. Customers with a tenure of 10 years or more show the lowest churn rate.
-b. The churn rate is higher among females (55%) compared to males (44%).
-c. Among countries, France records the highest churn, followed by Germany, while Spain has the lowest churn rate.
-d. Customers with higher credit scores and a greater number of products tend to have lower churn rates.
-e.  A total of 685 customers with credit scores between 580–669 churned, making this range the most affected segment.
-f. Interestingly, customers with an estimated salary between 100K–200K show the highest churn, with 1,045 customers leaving.
+!(https://github.com/savio999/Bank-churn-analysis/blob/main/Churn%20Breakdown.png)
+a. Based on the Tenure chart (grouped into 0–2, 3–6, 7–9, and 10+ years), the churn rate increases from the 0–2 group to the 3–6 group, and then gradually decreases thereafter. Customers with a tenure of 10 years or more show the lowest churn rate.<br>
+b. The churn rate is higher among females (55%) compared to males (44%).<br>
+c. Among countries, France records the highest churn, followed by Germany, while Spain has the lowest churn rate.<br>
+d. Customers with higher credit scores and a greater number of products tend to have lower churn rates.<br>
+e.  A total of 685 customers with credit scores between 580–669 churned, making this range the most affected segment.<br>
+f. Interestingly, customers with an estimated salary between 100K–200K show the highest churn, with 1,045 customers leaving.<br>
 
-### 3. Credit Card Churn:  
+### 3. Credit Card Churn: 
+!(https://github.com/savio999/Bank-churn-analysis/blob/main/credit%20card%20churn.png)
 Customers without credit cards show a slightly higher churn rate compared to those who have credit cards. However, there is not much variation in churn among different credit card holders — the difference is around 20% or less.
 
 ### Conclusion
