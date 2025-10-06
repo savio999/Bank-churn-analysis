@@ -33,7 +33,7 @@ As we know, it is much more expensive to sign in a new client than keeping an ex
 •	No duplicate records were detected in the dataset.
 
 ## Relation View
-!Reltion View(https://github.com/savio999/Bank-churn-analysis/blob/main/relation%20View.png)
+![Relation View](https://github.com/savio999/Bank-churn-analysis/blob/main/relation%20View.png)
 From the main fact table “Customer-Churn-Records”, the following dimension tables were created to enhance reporting and analysis:
 1.	Credit Card Holders<br>
 2.	Geography<br>
@@ -47,7 +47,7 @@ All the above tables maintain a one-to-many relationship with the fact table (Cu
 I have created reports in 3 pages:
 
 ### 1. Overview:
-!(https://github.com/savio999/Bank-churn-analysis/blob/main/Overview.png)
+![Overview](https://github.com/savio999/Bank-churn-analysis/blob/main/Overview.png)
 Dataset Overview and Key Insights:<br>
 •	The dataset contains 10,000 customer records, with an overall churn rate of 20.4%.<br>
 •	A total of 2,044 complaints were received, and the average customer satisfaction score is 3.01 out of 5.<br>
@@ -63,7 +63,7 @@ Financial Insights:<br>
 •	The churn rate increases progressively with higher balances — 25.02% for 100K–200K and 55.08% for 200K+ customers, indicating that high-balance customers are more likely to churn.
 
 ### 2. Churn Breakdown:
-!(https://github.com/savio999/Bank-churn-analysis/blob/main/Churn%20Breakdown.png)
+![Churn Breakdown](https://github.com/savio999/Bank-churn-analysis/blob/main/Churn%20Breakdown.png)
 a. Based on the Tenure chart (grouped into 0–2, 3–6, 7–9, and 10+ years), the churn rate increases from the 0–2 group to the 3–6 group, and then gradually decreases thereafter. Customers with a tenure of 10 years or more show the lowest churn rate.<br>
 b. The churn rate is higher among females (55%) compared to males (44%).<br>
 c. Among countries, France records the highest churn, followed by Germany, while Spain has the lowest churn rate.<br>
@@ -72,7 +72,7 @@ e.  A total of 685 customers with credit scores between 580–669 churned, makin
 f. Interestingly, customers with an estimated salary between 100K–200K show the highest churn, with 1,045 customers leaving.<br>
 
 ### 3. Credit Card Churn: 
-!(https://github.com/savio999/Bank-churn-analysis/blob/main/credit%20card%20churn.png)
+![Credit Card Churn](https://github.com/savio999/Bank-churn-analysis/blob/main/credit%20card%20churn.png)
 Customers without credit cards show a slightly higher churn rate compared to those who have credit cards. However, there is not much variation in churn among different credit card holders — the difference is around 20% or less.
 
 ### Conclusion
